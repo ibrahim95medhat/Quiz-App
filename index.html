@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mian.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="animate__animated  animate__zoomInDown  ">
+        <div class="m-auto header-shape my-3">
+            
+                <h1 class="main-header text-center bg-white text-black ">QUIZ APP</h1>
+    
+        </div>
+    </div>
+    
+
+<div class="form my-5 animate__animated  animate__fadeInBottomLeft animate__slower">
+
+    <select class="form-select my-3" aria-label="category-selector" id="category-selector">
+        <option selected>Select category</option>
+        <option value="9">knowledge</option>
+        <option value="27">Animals</option>
+        <option value="19">science: Mathematics</option>
+        <option value="18">science:computers</option>
+        <option value="22">geography</option>
+       
+      </select>
+
+    <select class="form-select my-3" aria-label="difficulty-selector" id="difficulty-selector">
+        <option selected>choose difficulty level</option>
+        <option value="easy">easy</option>
+        <option value="medium">medium</option>
+        <option value="hard">hard</option>
+      </select>
+
+      <input class="form-control my-3" id="question-number" type="text" placeholder="number of questions" name="question-number">
+
+      <button id="start-quiz" class="btn btn-primary d-block m-auto ">start quiz</button>
+</div>
+<div class="question-container">
+    <div class="container">
+        <div class="row"></div>
+    </div>
+</div>
+<div class="finalResult m-5 p-3 d-none rounded-pill">
+    <div class="container">
+        <div class="score p-2 bg-white  d-flex flex-column justify-content-center align-items-center">
+           
+        </div>
+    </div>
+</div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
