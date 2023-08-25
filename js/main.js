@@ -35,7 +35,7 @@ constructor(category,difficulty,questions){
 
 getApi(){
 
-    return `https://opentdb.com/api.php?amount=${this.questions}&category=${this.category}&difficulty=${this.difficulty}&type=boolean`
+    return `https://opentdb.com/api.php?amount=${this.questions}&category=${this.category}&difficulty=${this.difficulty}`
 }
 async fetchApi(){
  let res=   await fetch(this.getApi());
@@ -76,7 +76,7 @@ class Questions{
     <div class="question text-center mb-2" >${this.question}</div>
     <ul class="choices list-unstyled text-center d-flex flex-column justify-content-center align-items-center">
     
-    ${this.allAnswers.map((e)=> `<li class="my-3 w-50 text-center">${e}</li>` )}
+    ${this.allAnswers.map((e)=> `<li class="my-3 w-50 text-center">${e}</li>` ).join()}
     </ul>
     </div>
     <div class="footer">
@@ -160,3 +160,7 @@ this.index < questions.length ? this.newQuestion() :  this.displayFinalScore();
         })
     }
 }
+
+
+
+
