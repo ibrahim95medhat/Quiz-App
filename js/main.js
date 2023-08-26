@@ -76,7 +76,7 @@ class Questions{
     <div class="question text-center mb-2" >${this.question}</div>
     <ul class="choices list-unstyled text-center d-flex flex-column justify-content-center align-items-center">
     
-    ${this.allAnswers.map((e)=> `<li class="my-3 w-50 text-center">${e}</li>` ).join()}
+    ${this.allAnswers.map((e)=> `<li class="my-3 w-50 text-center">${e}</li>` ).join("")}
     </ul>
     </div>
     <div class="footer">
